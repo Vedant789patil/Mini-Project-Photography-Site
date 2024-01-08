@@ -1,0 +1,138 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main_box{
+  background: url(photo.jpg) ;
+  height: 100vh ;
+  background-size: cover ;
+}
+
+.btn_one {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.sidebar_menu{
+  position: fixed;
+  left: -350px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.51);
+  transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 0 0.1px 6px rgba(255, 255, 255, 0.51);
+  border-radius: 4px;
+ 
+}
+
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 63px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  
+  
+}
+
+.sidebar_menu .btn_two i  {
+  color: grey;
+  font-size: 25px;
+  line-height: 60px;
+  position: absolute;
+  left: 260px;
+  transition: all 0.27s linear;
+  cursor: pointer;
+}
+
+.sidebar_menu .menu {
+  position: absolute;
+  color: white;
+  top: 80px;
+  width: 100%;
+}
+
+.sidebar_menu .menu li {
+  margin-top: 6px;
+  padding: 12px 20px;
+  border-radius: 4.9px;
+}
+
+.sidebar_menu .menu i,a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+.sidebar_menu .menu i {
+  padding-right: 9px;
+}
+
+.sidebar_menu .social_media {
+  color: white;
+  position: absolute;
+  opacity: 0.5;
+  left: 25%;
+  bottom: 54px;
+}
+
+.sidebar_menu .social_media i {
+  color: white;
+  opacity: 0.5;
+  padding: 3px;
+}
+
+#check {
+  display: none;
+}
+
+.sidebar_menu li:hover {
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.51);
+  
+}
+
+.btn_one i:hover{
+  font-size: 33.1px;
+}
+
+.btn_two i:hover{
+  font-size: 29px;
+}
+
+.sidebar_menu .social_media i:hover {
+  opacity: 2;
+  transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0;
+  
+}
+
+#check:checked ~ .btn_one i {
+  opacity: 0;
+  
+}
+
+#check:checked ~ .sidebar_menu .btn_two{
+  opacity: 1;
+}
+
